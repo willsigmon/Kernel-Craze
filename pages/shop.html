@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop 30+ gourmet popcorn flavors from Kernel Craze. Locally sourced in Henderson, NC. Every purchase supports our community.">
+
+  <title>Shop Popcorn - 30+ Flavors | Kernel Craze | Henderson NC</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <span class="nav-logo-icon">🍿</span>
+        <span class="nav-logo-text">Kernel Craze</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="our-story.html" class="nav-link">Our Story</a></li>
+        <li><a href="shop.html" class="nav-link">Shop Popcorn</a></li>
+        <li><a href="fundraising.html" class="nav-link highlight">Fundraise — Keep 50%!</a></li>
+        <li><a href="henderson-pride.html" class="nav-link">Henderson Pride</a></li>
+        <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="shop.html" class="btn btn-butter btn-sm">Shop & Support</a>
+        <button class="nav-cart" aria-label="Shopping cart">
+          🛒
+          <span class="nav-cart-count">0</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="shop-hero">
+    <div class="container">
+      <p class="section-label" style="color: var(--color-caramel);">Handcrafted in Henderson</p>
+      <h1 style="margin-bottom: var(--space-md);">30+ Flavors. Infinite Joy.</h1>
+      <p style="font-size: var(--text-lg); color: var(--color-kernel-light); max-width: 600px; margin: 0 auto;">
+        Every bag is locally sourced, lovingly made, and supports our Henderson community.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="section" style="background: var(--color-white); padding-top: var(--space-2xl); padding-bottom: 0;">
+    <div class="container">
+      <div class="shop-filters">
+        <button class="filter-btn active" data-filter="all">All Flavors</button>
+        <button class="filter-btn" data-filter="savory">Savory</button>
+        <button class="filter-btn" data-filter="sweet">Sweet</button>
+        <button class="filter-btn" data-filter="seasonal">Seasonal</button>
+        <button class="filter-btn" data-filter="tins">Gift Tins</button>
+      </div>
+
+      <p class="products-count">Showing <strong>16</strong> products</p>
+    </div>
+  </section>
+
+  <!-- Products Grid -->
+  <section class="section-lg" style="background: var(--color-white); padding-top: var(--space-xl);">
+    <div class="container">
+      <!-- Impact Banner -->
+      <div class="animate-on-scroll" style="background: var(--color-growth); color: white; padding: var(--space-lg) var(--space-xl); border-radius: var(--radius-lg); margin-bottom: var(--space-2xl); text-align: center;">
+        <p style="font-size: var(--text-lg);">
+          💚 <strong>Every purchase supports Henderson.</strong> 8% of tin sales go to local school arts programs.
+        </p>
+      </div>
+
+      <div class="product-grid">
+        <!-- Savory Flavors -->
+        <div class="product-card animate-on-scroll" data-category="savory">
+          <div class="product-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #8B4513, #D2691E); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🥓</div>
+            <span class="product-badge community">Bestseller</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Bacon Cheddar</h3>
+            <p class="product-desc">Smoky bacon meets sharp cheddar</p>
+            <div class="product-footer">
+              <span class="product-price">
+                <span class="product-price-old">$3.00</span>
+                $2.55
+              </span>
+              <button class="product-add" aria-label="Add to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card animate-on-scroll delay-1" data-category="savory">
+          <div class="product-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #8B0000, #CD5C5C); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🔥</div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">BBQ</h3>
+            <p class="product-desc">Tangy, smoky, Southern perfection</p>
+            <div class="product-footer">
+              <span class="product-price">
+                <span class="product-price-old">$3.00</span>
+                $2.55
+              </span>
+              <button class="product-add" aria-label="Add to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card animate-on-scroll delay-2" data-category="savory">
+          <div class="product-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #FF4500, #FF6347); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🌶️</div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Blazin' Buffalo</h3>
+            <p class="product-desc">Wing night in a bag</p>
+            <div class="product-footer">
+              <span class="product-price">
+                <span class="product-price-old">$3.00</span>
+                $2.55
+              </span>
+              <button class="product-add" aria-label="Add to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card animate-on-scroll delay-3" data-category="savory">
+          <div class="product-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #FFD700, #FFA500); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🧈</div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Butter</h3>
+            <p class="product-desc">Classic. Perfect. Timeless.</p>
+            <div class="product-footer">
+              <span class="product-price">
+                <span class="product-price-old">$3.00</span>
+                $2.55
+              </span>
+              <button class="product-add" aria-label="Add to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card animate-on-scroll" data-category="savory">
+          <div class="product-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #FFD700, #DAA520); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🧀</div>
+            <span class="product-badge community">Community Favorite</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Cheddar</h3>
+            <p class="product-desc">Sharp, bold, cheesy goodness</p>
+            <div class="product-footer">
+              <span class="product-price">
+                <span class="product-price-old">$3.00</span>
+                $2.55
+              </span>
+              <button class="product-add" aria-label="Add to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card animate-on-scroll delay-1" data-category="savory">
+          <div class="product-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #228B22, #32CD32); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🌶️</div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Jalapeño Cheddar</h3>
+            <p class="product-desc">Kick of heat, wave of cheese</p>
+            <div class="product-footer">
+              <span class="product-price">
+                <span class="product-price-old">$3.00</span>
+                $2.55
+              </span>
+              <button class="product-add" aria-label="Add to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card animate-on-scroll delay-2" data-category="savory">
+          <div class="product-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #6B8E23, #556B2F); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🫒</div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Mediterranean</h3>
+            <p class="product-desc">Herbs, olive oil, sunshine</p>
+            <div class="product-footer">
+              <span class="product-price">
+                <span class="product-price-old">$3.00</span>
+                $2.55
+              </span>
+              <button class="product-add" aria-label="Add to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sweet Flavors -->
+        <div class="product-card animate-on-scroll delay-3" data-category="sweet">
+          <div class="product-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #DC143C, #B22222); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🍎</div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Candy Apple</h3>
+            <p class="product-desc">State fair memories in every bite</p>
+            <div class="product-footer">
+              <span class="product-price">
+                <span class="product-price-old">$3.00</span>
+                $2.55
+              </span>
+              <button class="product-add" aria-label="Add to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card animate-on-scroll" data-category="sweet">
+          <div class="product-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #D2691E, #8B4513); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🍯</div>
+            <span class="product-badge">Classic</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Caramel</h3>
+            <p class="product-desc">Rich, buttery, irresistible</p>
+            <div class="product-footer">
+              <span class="product-price">
+                <span class="product-price-old">$3.00</span>
+                $2.55
+              </span>
+              <button class="product-add" aria-label="Add to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card animate-on-scroll delay-1" data-category="sweet">
+          <div class="product-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #D2691E, #FFD700); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🍿</div>
+            <span class="product-badge community">Fan Favorite</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Chi-Town Combo</h3>
+            <p class="product-desc">Sweet caramel + savory cheese = magic</p>
+            <div class="product-footer">
+              <span class="product-price">
+                <span class="product-price-old">$3.00</span>
+                $2.55
+              </span>
+              <button class="product-add" aria-label="Add to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card animate-on-scroll delay-2" data-category="sweet">
+          <div class="product-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #D2691E, #CD853F); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🥧</div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Cinna-Sizzle</h3>
+            <p class="product-desc">Warm cinnamon sugar bliss</p>
+            <div class="product-footer">
+              <span class="product-price">
+                <span class="product-price-old">$3.00</span>
+                $2.55
+              </span>
+              <button class="product-add" aria-label="Add to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seasonal -->
+        <div class="product-card animate-on-scroll delay-3" data-category="seasonal">
+          <div class="product-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #90EE90, #32CD32); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🎄</div>
+            <span class="product-badge">Holiday Limited</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Grinchmas Crunch</h3>
+            <p class="product-desc">Lime, apple, strawberry + festive marshmallows</p>
+            <div class="product-footer">
+              <span class="product-price">
+                <span class="product-price-old">$3.00</span>
+                $2.55
+              </span>
+              <button class="product-add" aria-label="Add to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card animate-on-scroll" data-category="seasonal">
+          <div class="product-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #4B0082, #32CD32); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🧟</div>
+            <span class="product-badge">Spooky Season</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">FrankenPop</h3>
+            <p class="product-desc">A monster mash of flavors</p>
+            <div class="product-footer">
+              <span class="product-price">
+                <span class="product-price-old">$3.00</span>
+                $2.55
+              </span>
+              <button class="product-add" aria-label="Add to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gift Tins -->
+        <div class="product-card animate-on-scroll delay-1" data-category="tins">
+          <div class="product-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #4A4543, #2D2926); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🎁</div>
+            <span class="product-badge community">8% to Schools</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Graphite Henderson Tin</h3>
+            <p class="product-desc">2-gallon tin with local student art</p>
+            <div class="product-footer">
+              <span class="product-price">
+                <span class="product-price-old">$40.00</span>
+                $34.00
+              </span>
+              <button class="product-add" aria-label="Add to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card animate-on-scroll delay-2" data-category="tins">
+          <div class="product-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #87CEEB, #4682B4); display: flex; align-items: center; justify-content: center; font-size: 4rem;">🦌</div>
+            <span class="product-badge community">8% to Schools</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Reindeer Fishing Tin</h3>
+            <p class="product-desc">First place winner Charley Robinson's art</p>
+            <div class="product-footer">
+              <span class="product-price">
+                <span class="product-price-old">$40.00</span>
+                $34.00
+              </span>
+              <button class="product-add" aria-label="Add to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card animate-on-scroll delay-3" data-category="tins">
+          <div class="product-image">
+            <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #DC143C, #228B22); display: flex; align-items: center; justify-content: center; font-size: 4rem;">✨</div>
+            <span class="product-badge community">8% to Schools</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Henderson Lights Tin</h3>
+            <p class="product-desc">John Tran's neon Henderson design</p>
+            <div class="product-footer">
+              <span class="product-price">
+                <span class="product-price-old">$40.00</span>
+                $34.00
+              </span>
+              <button class="product-add" aria-label="Add to cart">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Size Guide -->
+  <section class="section-lg" style="background: var(--color-cream);">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <p class="section-label">How Much Do You Need?</p>
+        <h2 class="section-title">Size Guide</h2>
+      </div>
+
+      <div class="grid grid-cols-3 gap-xl" style="max-width: 900px; margin: 0 auto;">
+        <div class="animate-on-scroll text-center" style="background: var(--color-white); padding: var(--space-xl); border-radius: var(--radius-lg);">
+          <span style="font-size: 3rem; display: block; margin-bottom: var(--space-md);">🍿</span>
+          <h4>Popcorn Peek</h4>
+          <p style="font-size: var(--text-2xl); font-weight: 700; color: var(--color-caramel); margin: var(--space-sm) 0;">2 oz</p>
+          <p class="text-muted">Perfect for trying new flavors</p>
+          <p style="font-weight: 600; margin-top: var(--space-md);">$2.55</p>
+        </div>
+
+        <div class="animate-on-scroll delay-1 text-center" style="background: var(--color-white); padding: var(--space-xl); border-radius: var(--radius-lg); border: 2px solid var(--color-butter);">
+          <span style="font-size: 3rem; display: block; margin-bottom: var(--space-md);">🎬</span>
+          <h4>Midway Munch</h4>
+          <p style="font-size: var(--text-2xl); font-weight: 700; color: var(--color-caramel); margin: var(--space-sm) 0;">10 oz</p>
+          <p class="text-muted">Movie night for 2-3 people</p>
+          <p style="font-weight: 600; margin-top: var(--space-md);">$9.78</p>
+          <span style="background: var(--color-butter); color: var(--color-kernel); font-size: var(--text-xs); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-full); font-weight: 600;">MOST POPULAR</span>
+        </div>
+
+        <div class="animate-on-scroll delay-2 text-center" style="background: var(--color-white); padding: var(--space-xl); border-radius: var(--radius-lg);">
+          <span style="font-size: 3rem; display: block; margin-bottom: var(--space-md);">🎉</span>
+          <h4>Party Popper</h4>
+          <p style="font-size: var(--text-2xl); font-weight: 700; color: var(--color-caramel); margin: var(--space-sm) 0;">Large</p>
+          <p class="text-muted">Events, parties, sharing</p>
+          <p style="font-weight: 600; margin-top: var(--space-md);">$42.50</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="background: var(--color-kernel); color: white; text-align: center;">
+    <div class="container">
+      <h3 style="color: var(--color-butter); margin-bottom: var(--space-md);">Ordering for an Event?</h3>
+      <p style="font-size: var(--text-lg); color: var(--color-sand); margin-bottom: var(--space-xl); max-width: 500px; margin-left: auto; margin-right: auto;">
+        Bulk orders, custom tins, and corporate gifts available. Let's make your event pop!
+      </p>
+      <a href="../index.html#contact" class="btn btn-butter btn-lg">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">🍿 Kernel Craze</div>
+          <p class="footer-tagline">
+            Crafting healthy, fun, and locally sourced popcorn snacks.
+            Building community, one kernel at a time.
+          </p>
+          <p class="footer-location">
+            <span>📍</span>
+            <span>Proudly Born in Henderson, NC</span>
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Shop</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html">All Flavors</a></li>
+            <li><a href="shop.html#seasonal">Seasonal Selections</a></li>
+            <li><a href="shop.html#tins">Gift Tins</a></li>
+            <li><a href="shop.html#apparel">Merch</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Community</h4>
+          <ul class="footer-links">
+            <li><a href="our-story.html">Our Story</a></li>
+            <li><a href="fundraising.html">Fundraising</a></li>
+            <li><a href="henderson-pride.html">Henderson Pride</a></li>
+            <li><a href="#">Media & Press</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Connect</h4>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/profile.php?id=61565004433026" aria-label="Facebook" target="_blank" rel="noopener">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/kernel_craze_popcorn/" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@kernel.craze" aria-label="TikTok" target="_blank" rel="noopener">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2024-2026 Kernel Craze. Made with ❤️ in Henderson, NC.
+        </p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

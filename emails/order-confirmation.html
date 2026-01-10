@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmed - You Just Made Henderson a Little Better!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #2D2926;
+      background-color: #FDF8F3;
+    }
+
+    .email-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #FFFFFF;
+    }
+
+    .header {
+      background: #2D6A4F;
+      color: #FFFFFF;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .header .checkmark {
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      padding: 40px 30px;
+    }
+
+    h2 {
+      color: #2D2926;
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: #5C5652;
+    }
+
+    .order-box {
+      background: #F9F3EB;
+      padding: 25px;
+      border-radius: 8px;
+      margin: 25px 0;
+    }
+
+    .order-number {
+      font-size: 14px;
+      color: #8A8480;
+      margin-bottom: 10px;
+    }
+
+    .order-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #E0D6CC;
+    }
+
+    .order-item:last-child {
+      border-bottom: none;
+    }
+
+    .order-total {
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 2px solid #2D2926;
+    }
+
+    .impact-box {
+      background: #FBE98A;
+      padding: 25px;
+      border-radius: 8px;
+      margin: 25px 0;
+      text-align: center;
+    }
+
+    .impact-box h3 {
+      margin: 0 0 10px;
+      color: #2D2926;
+    }
+
+    .impact-stat {
+      font-size: 36px;
+      font-weight: bold;
+      color: #C4733B;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #2D2926;
+      color: #FFFFFF !important;
+      padding: 15px 35px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .cta-section {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .shipping-info {
+      background: #F9F3EB;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 25px 0;
+    }
+
+    .footer {
+      background: #2D2926;
+      color: #8A8480;
+      padding: 30px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: #F5D547;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <!-- Header -->
+    <div class="header">
+      <div class="checkmark">✓</div>
+      <h1>Order Confirmed!</h1>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <h2>Thank you for believing in Henderson! 🍿</h2>
+
+      <p>
+        Hey {{customer_name}},
+      </p>
+
+      <p>
+        Your order is confirmed and we're getting it ready. But more importantly—you just
+        helped build something bigger than a popcorn purchase.
+      </p>
+
+      <div class="impact-box">
+        <h3>Your Impact Today</h3>
+        <p class="impact-stat">{{impact_amount}}</p>
+        <p style="margin: 0; color: #5C5652;">
+          going back to Henderson through<br>local sourcing & community programs
+        </p>
+      </div>
+
+      <div class="order-box">
+        <p class="order-number">Order #{{order_number}}</p>
+
+        <div class="order-item">
+          <span>{{product_1_name}} × {{product_1_qty}}</span>
+          <span>${{product_1_price}}</span>
+        </div>
+
+        <div class="order-item">
+          <span>{{product_2_name}} × {{product_2_qty}}</span>
+          <span>${{product_2_price}}</span>
+        </div>
+
+        <div class="order-item">
+          <span>Shipping</span>
+          <span>{{shipping_cost}}</span>
+        </div>
+
+        <div class="order-total">
+          <div class="order-item" style="border: none; font-weight: bold;">
+            <span>Total</span>
+            <span>${{order_total}}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="shipping-info">
+        <strong>📦 Shipping To:</strong><br>
+        {{shipping_name}}<br>
+        {{shipping_address}}<br>
+        {{shipping_city_state_zip}}
+      </div>
+
+      <div class="cta-section">
+        <a href="{{tracking_url}}" class="cta-button">
+          Track Your Order
+        </a>
+      </div>
+
+      <h2>What Happens Next?</h2>
+
+      <p>
+        <strong>🍿 Popping Fresh:</strong> We're handcrafting your order with locally sourced ingredients.
+      </p>
+      <p>
+        <strong>📦 Shipped With Care:</strong> You'll get tracking info when it's on its way.
+      </p>
+      <p>
+        <strong>😋 Enjoy & Share:</strong> Tag us @kernel_craze_popcorn when you dig in!
+      </p>
+
+      <hr style="border: none; border-top: 1px solid #E0D6CC; margin: 30px 0;">
+
+      <p>
+        <strong>Know someone who'd love this?</strong><br>
+        Share the Henderson love. Send them to
+        <a href="https://kernelcraze.com" style="color: #C4733B;">kernelcraze.com</a>
+      </p>
+
+      <p>
+        Questions? Just reply to this email. We're real people from Henderson, and we'd love to hear from you.
+      </p>
+
+      <p>
+        — The Kernel Craze Team<br>
+        <em>Made with ❤️ in Henderson, NC</em>
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>
+        🍿 Kernel Craze | Henderson, NC<br>
+        <a href="https://kernelcraze.com">kernelcraze.com</a>
+      </p>
+
+      <p style="font-size: 12px; margin-top: 20px;">
+        <a href="#">View Order</a> |
+        <a href="#">Contact Us</a> |
+        <a href="#">Refund Policy</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
